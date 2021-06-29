@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Operaciones basicas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h3>Operaciones</h3>
+
+    <ion-item>
+      <ion-label>Dato 1:</ion-label>
+      <ion-input [(ngModel)]="numero1" type="number" aria-placeholder="Digitar numero 1"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-item>
+      <ion-label>Dato 2:</ion-label>
+      <ion-input [(ngModel)]="numero2" type="number" aria-placeholder="Digitar numero 2"></ion-input>
+    </ion-item>
+
+    <br>
+    <ion-button (click)="sumarNumero()" color="secondary" expand="block">Sumar</ion-button>
+
+
+    <ion-card-header>
+      Resultado:
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>La suma de los valores es de: {{suma}}</p>
+    </ion-card-content>
+
+
+
+</ion-content>
